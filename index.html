@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Resmi SMK NEGERI DARUL IHSAN | PPDB</title>
+
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    /* NAVBAR */
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(30,60,114,0.95);
+      padding: 14px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    header .logo {
+      font-size: 20px;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    header nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 14px;
+      opacity: 0.9;
+    }
+
+    header nav a:hover { opacity: 1; }
+
+    /* HERO */
+    .hero {
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 120px 20px 60px;
+      color: #fff;
+    }
+
+    .hero h1 {
+      font-size: 40px;
+      margin-bottom: 12px;
+    }
+
+    .hero h2 {
+      font-size: 20px;
+      font-weight: 400;
+      margin-bottom: 25px;
+      opacity: 0.95;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 40px;
+      font-size: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 16px 36px;
+      background: #fff;
+      color: #1e3c72;
+      border-radius: 40px;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.3);
+      transition: 0.25s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 40px rgba(0,0,0,0.4);
+    }
+
+    /* SECTION */
+    section {
+      padding: 80px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    section h3 {
+      text-align: center;
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #1e3c72;
+    }
+
+    section p {
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+      font-size: 15px;
+      color: #555;
+    }
+
+    /* GRID BOX */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .feature-box {
+      background: #f7f9ff;
+      padding: 30px 20px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    }
+
+    .feature-box h4 {
+      margin-bottom: 10px;
+      color: #1e3c72;
+    }
+
+    /* CTA */
+    .cta {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: #fff;
+      text-align: center;
+      padding: 70px 20px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      font-size: 13px;
+      background: #f1f1f1;
+      color: #666;
+    }
+
+    @media (max-width: 768px) {
+      header { padding: 14px 20px; }
+      .hero h1 { font-size: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">SMK NEGERI DARUL IHSAN</div>
+  <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+<nav id="navMenu">
+  <a href="#profil" onclick="toggleMenu()">Profil</a>
+  <a href="#struktur" onclick="toggleMenu()">Struktur</a>
+  <a href="#keunggulan" onclick="toggleMenu()">Keunggulan</a>
+  <a href="#program" onclick="toggleMenu()">Program</a>
+  <a href="#fasilitas" onclick="toggleMenu()">Fasilitas</a>
+  <a href="#ppdb" onclick="toggleMenu()">PPDB</a>
+</nav>
+
+</header>
+
+<div class="hero">
+  <div>
+    <h1>Welcome to Smk Negeri Darul ihsan</h1>
+    <h2>Mendidik dengan Ilmu, Membina dengan Akhlak</h2>
+    <p>
+      Berkomitmen mencetak generasi unggul,
+      berkarakter, dan siap menghadapi masa depan.
+    </p>
+    <a class="btn" href="https://docs.google.com/forms/d/1qEf0rX0ZZ4A8VI7NzJYF3tkE16rElt-3UoTtzBtVDNc/viewform" target="_blank">
+      Daftar Siswa Baru
+    </a>
+  </div>
+</div>
+
+<section id="profil">
+  <h3>Profil Sekolah</h3>
+
+  <p>
+    SMK Negeri Darul Ihsan merupakan Sekolah Menengah Kejuruan Negeri yang berada
+    di Kabupaten Aceh Timur. Terletak di desa Seunebok Teungoh kecamatan Darul Ihsan, sekolah ini hadir sebagai solusi pendidikan vokasi yang
+    mencetak generasi muda yang siap kerja, kreatif, dan mandiri.
+  </p>
+
+  <p>
+    Sebagai sekolah berakreditasi B, SMK Negeri Darul Ihsan tidak hanya menekankan
+    penguasaan teori, tetapi lebih mengutamakan pembelajaran berbasis praktik.
+    Melalui dua jurusan unggulan, yaitu Teknik Komputer dan Jaringan (TKJ) serta
+    Tata Busana, peserta didik dibimbing oleh tenaga pendidik profesional agar
+    memiliki kompetensi yang relevan dengan kebutuhan dunia kerja dan industri.
+  </p>
+
+  <p>
+    Dalam menciptakan suasana belajar yang positif, sekolah menerapkan Gerakan
+    Sekolah Menyenangkan (GSM) guna membangun lingkungan pendidikan yang inovatif,
+    ramah, dan mendukung perkembangan karakter siswa. Didukung fasilitas
+    laboratorium dan workshop yang memadai, SMK Negeri Darul Ihsan berkomitmen
+    mendampingi peserta didik agar siap bekerja, berwirausaha, maupun melanjutkan
+    pendidikan ke jenjang perguruan tinggi.
+  </p>
+
+  <div class="features">
+    <div class="feature-box">
+      <h4>Visi</h4>
+      <p>
+        Menjadi lembaga pendidikan kejuruan yang unggul dalam menghasilkan lulusan
+        yang berakhlak mulia, kompeten, mandiri, serta mampu bersaing di dunia kerja
+        dan industri global.
+      </p>
+    </div>
+
+    <div class="feature-box">
+      <h4>Misi</h4>
+      <p>
+        1. Pendidikan berlandaskan iman dan takwa.<br>
+        2. Pembelajaran inovatif berbasis teknologi.<br>
+        3. Penguatan kompetensi melalui praktik dan sertifikasi.<br>
+        4. Kemitraan dengan Dunia Usaha dan Dunia Industri (DUDI).<br>
+        5. Pengembangan jiwa kewirausahaan lulusan.
+      </p>
+    </div>
+  </div>
+</section>
+
+
+<style>
+/* STRUKTUR ORGANISASI */
+.org-section {
+  padding: 80px 40px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+.org-section h3 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #1e3c72;
+}
+
+.org-section p.sub {
+  text-align: center;
+  font-size: 15px;
+  color: #555;
+  margin-bottom: 40px;
+}
+
+.org-title {
+  font-size: 22px;
+  margin: 50px 0 20px;
+  color: #1e3c72;
+  text-align: center;
+}
+
+.org-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 25px;
+}
+
+.org-card {
+  background: #f7f9ff;
+  padding: 25px 15px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+}
+
+.org-card img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.org-card h4 {
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: #1e3c72;
+}
+
+.org-card span {
+  display: block;
+  font-size: 13px;
+  color: #666;
+}
+/* =====================
+   MOBILE RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+
+  header {
+    padding: 12px 18px;
+  }
+
+  header .logo {
+    font-size: 16px;
+  }
+
+  header nav {
+    display: none;
+  }
+
+  .hero {
+    padding: 100px 18px 50px;
+  }
+
+  .hero h1 {
+    font-size: 26px;
+  }
+
+  .hero h2 {
+    font-size: 15px;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 14px 28px;
+    font-size: 14px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+
+  section h3 {
+    font-size: 22px;
+  }
+
+  section p {
+    font-size: 14px;
+  }
+
+  .features {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .feature-box {
+    padding: 22px 18px;
+  }
+
+  .feature-box h4 {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 12px;
+    padding: 20px;
+  }
+}
+/* ===== HAMBURGER MENU ===== */
+.menu-toggle {
+  display: none;
+  font-size: 26px;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ===== MOBILE ===== */
+@media (max-width: 768px) {
+
+  .menu-toggle {
+    display: block;
+  }
+
+  header nav {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background: #1e3c72;
+    display: none;
+    flex-direction: column;
+    padding: 15px 0;
+  }
+
+  header nav a {
+    margin: 12px 0;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  header nav.active {
+    display: flex;
+  }
+}
+/* ===== FOTO ORANG ===== */
+.feature-box img {
+  width: 110px;
+  height: 110px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  border: 4px solid #1e3c72;
+}
+html {
+  scroll-behavior: smooth;
+}
+@media (max-width: 768px) {
+
+  .feature-box img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .feature-box h4 {
+    font-size: 15px;
+  }
+
+  .feature-box p {
+    font-size: 13px;
+  }
+
+  .cta {
+    padding: 50px 20px;
+  }
+
+  .cta h3 {
+    font-size: 22px;
+  }
+}
+
+</style>
+
+<section id="struktur" class="org-section">
+  <h3>Struktur Organisasi</h3>
+  <p class="sub">Tenaga pendidik dan kependidikan SMK Negeri Darul Ihsan</p>
+
+  <!-- KEPALA SEKOLAH -->
+  <div class="org-title">Kepala Sekolah</div>
+  <div class="org-grid">
+    <div class="org-card">
+      <img src="https://via.placeholder.com/150" alt="Kepala Sekolah">
+      <h4>Nurlela Lubis, S.Pd., M.Pd.</h4>
+      <span>Kepala Sekolah</span>
+    </div>
+  </div>
+
+  <!-- WAKIL KEPALA SEKOLAH -->
+  <div class="org-title">Wakil Kepala Sekolah</div>
+  <div class="org-grid">
+    <div class="org-card">
+      <img src="https://via.placeholder.com/150">
+      <h4>Aisyah, S.Pd</h4>
+      <span>Wakil Kurikulum</span>
+    </div>
+    <div class="org-card">
+      <img src="https://via.placeholder.com/150">
+      <h4>Selly Putri Dasanti, S.Pd</h4>
+      <span>Wakil Kesiswaan</span>
+    </div>
+    <div class="org-card">
+      <img src="https://via.placeholder.com/150">
+      <h4>Rosdiana, S.Pd</h4>
+      <span>Wakil Sarpras</span>
+    </div>
+    <div class="org-card">
+      <img src="https://via.placeholder.com/150">
+      <h4>Muhammad Saidi, S.Pd.I</h4>
+      <span>Wakil Humas</span>
+    </div>
+  </div>
+
+  <!-- Tenaga Pendidik -->
+  <div class="org-title">Guru</div>
+  <div class="org-grid">
+    <div class="org-card"><h4>Mukhlis, S.T</h4><span>Ketua Jurusan TJKT</span></div>
+    <div class="org-card"><h4>Nurul Aflah, S.Pd</h4><span>Ketua Jurusan TB</span></div>
+    <div class="org-card"><h4>Nurlina Sari, S.T</h4><span>Guru TJKT</span></div>
+    <div class="org-card"><h4>Nur Afril, S.Pd</h4><span>Guru Tata Busana</span></div>
+    <div class="org-card"><h4>Nur Azizah, S.Pd</h4><span>Guru Tata Busana</span></div>
+    <div class="org-card"><h4>Rosnani, S.Pd</h4><span>Guru B. Inggris</span></div>
+    <div class="org-card"><h4>Nur Fahri, S.Pd</h4><span>Guru B. Indonesia</span></div>
+    <div class="org-card"><h4>Indrayani Fuaida, S.Pd</h4><span>Guru IPAS</span></div>
+    <div class="org-card"><h4>Muhriza Haryadi, S.Pd</h4><span>Guru PJOK</span></div>
+    <div class="org-card"><h4>Ainul Husna, S.Pd</h4><span>Guru PKWN</span></div>
+    <div class="org-card"><h4>Dian Amelia, S.sos</h4><span>Guru BK</span></div>
+    <div class="org-card"><h4>Muhammad Arifin, S.T</h4><span>Guru TJKT</span></div>
+  </div>
+
+  <!-- Tenaga Kependidikan -->
+  <div class="org-title">Tata Usaha</div>
+  <div class="org-grid">
+    <div class="org-card"><h4>Asmah, S.E</h4><span>Ka. Tata Usaha</span></div>
+    <div class="org-card"><h4>Zainatul Faiza, S.Pd</h4><span>Tenaga Administrasi</span></div>
+    <div class="org-card"><h4>Marlina</h4><span>Tenaga Administrasi</span></div>
+    <div class="org-card"><h4>Agus Salem</h4><span>Tenaga Administrasi</span></div>
+  </div>
+</section>
+
+
+<section id="keunggulan">
+  <h3>Keunggulan Sekolah</h3>
+
+  <div class="features">
+    <div class="feature-box">
+      <h4>Pendidikan Berkualitas</h4>
+      <p>Didukung tenaga pendidik profesional.</p>
+    </div>
+    <div class="feature-box">
+      <h4>Lingkungan Religius</h4>
+      <p>Pembinaan karakter dan akhlak.</p>
+    </div>
+    <div class="feature-box">
+      <h4>Fasilitas Lengkap</h4>
+      <p>Sarana belajar modern dan nyaman.</p>
+    </div>
+  </div>
+</section>
+
+<section id="program">
+  <h3>Program Keahlian</h3>
+
+  <div class="features">
+    <div class="feature-box">
+      <h4>Teknik Komputer & Jaringan</h4>
+      <p>Jaringan, server, dan IT support.</p>
+    </div>
+    <div class="feature-box">
+      <h4>Tata Busana</h4>
+      <p>Desain, produksi, dan kewirausahaan.</p>
+    </div>
+  </div>
+</section>
+
+<section id="fasilitas">
+  <h3>Fasilitas Sekolah</h3>
+
+  <div class="features">
+    <div class="feature-box">
+      <h4>Lab Komputer</h4>
+      <p>Praktik TKJ lengkap.</p>
+    </div>
+    <div class="feature-box">
+      <h4>Ruang Busana</h4>
+      <p>Mesin jahit dan peralatan.</p>
+    </div>
+    <div class="feature-box">
+      <h4>Perpustakaan</h4>
+      <p>Nyaman dan kondusif.</p>
+    </div>
+  </div>
+</section>
+
+<div class="cta" id="ppdb">
+  <h3>Pendaftaran Peserta Didik Baru</h3>
+  <p>Segera daftarkan putra-putri Anda.</p>
+  <br>
+  <a class="btn" href="https://docs.google.com/forms/d/1qEf0rX0ZZ4A8VI7NzJYF3tkE16rElt-3UoTtzBtVDNc/viewform" target="_blank">
+    Daftar Sekarang
+  </a>
+</div>
+
+<footer>
+  © 2026 Smk Negeri Darul Ihsan. All rights reserved.
+</footer>
+<script>
+  function toggleMenu() {
+    document.getElementById("navMenu").classList.toggle("active");
+  }
+</script>
+
+</body>
+</html>
